@@ -3,7 +3,7 @@ import React from "react";
 export type ButtonProps = {
     children: React.ReactNode;
     disabled?: boolean;
-    onClickEvent: () => void;
+    onClickEvent: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
     type?: "button" | "submit";
 }
 

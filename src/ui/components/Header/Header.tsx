@@ -6,7 +6,7 @@ export type HeaderProps = {
     navigation: {name: string, url: string}[];
 }
 
-export const Header : React.FC<HeaderProps> = ({ navigation}) => {
+export const Header : React.FC<HeaderProps> = ({ navigation }) => {
     return (
         <header>
             <nav>

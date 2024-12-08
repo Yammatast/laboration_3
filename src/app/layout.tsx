@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Heading, ToastProvider } from "@/ui/components";
+import { Footer, Heading, ToastProvider } from "@/ui/components";
 import { Header } from "@/ui/components/Header";
 import { CartProvider } from "@/context/cartContext";
 
@@ -35,6 +35,7 @@ export default function RootLayout({
             <CartProvider>
                 <Header navigation={[{name: "Products", url: "/products"}, {name: "Cart", url: "/cart"}]}/>
                 {children}
+                <Footer/>
             </CartProvider>
         </ToastProvider>
       </body>

@@ -7,3 +7,4 @@ export * from "./Link";
 export * from "./ProductCard";
 export * from "./ProductList";
 export * from "./Toast";
+export * from "./Footer";
